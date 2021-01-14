@@ -1,0 +1,15 @@
+
+{{>header}}
+{{>nav}}
+ <section class="container">
+     <div class="row">
+          {{#each pageData}}
+         <div class="col-4">
+            <img src="{{this.urlToImage}}" class="img-fluid">
+            <a href="{{this.url}}">{{this.title}}</a>
+         </div>
+           {{/each}}
+     </div>
+ </section>
+{{>footer}}
+
